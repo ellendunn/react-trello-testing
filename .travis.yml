@@ -2,6 +2,13 @@ language: node_js
 node_js: node_js
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: okwTQrDrVuG6jzPMKogRI5j6Ser7CYROQH8yV2SsdtSjWU6HUOvKAPH1j0n0WjOTsbkKcbeZf3IUU1atLDjgsBZkk/zAXUDxlDMrmXsDB6BxGt9EZhZGcfFtptLL0uuZ5+3REUdMrJqRTmfhhv01yRlHV0oSudzVqX+05NAQPRQ+Jvr4Sc9qn0Ng+W+QHNn+WQl+wqQTL66/Iva+P7iPf0s8Keg3uQrIsEzxi5WMpXUgC9T/qrW/uV8nT6Wjh/RHBn1ATLQMmaRhXlIcrqXhRSosaxjofktYA7eEj83w9W2vacDXOKAqGDZqj/9PgSqVVTg4++UKRcbnpF5WXWIsyD1Xc9TzuvcrqrfSYD/4kOUZaj/BFUbRW/6uWav8RdLpL4KVNGOqVm2jjrVAaAREY8BP3W6RVLLdo3Rxc7Ib/F1QFmfYcPKo0QQ32LGHuq10rX/LFWpus+xsIC0egR175fdXTI+FqWoF1s1PQs8lvZu8an6LWawnCbW0Klt7gixfzlP7idBMKk/TO/gfgSIQrGzW04RfcF44Ayc+3B6sgaEvsmUJXAlRB1QuoBjQRlxR8o89mdGK05ahImPjPcV/v5hnbIITEpaiAGzXrn9mCvsjMmMMMeLQGroOh9GHTjBa9QOW4bAKAC8IjEnozRyfNCfVeheXo83vY6b/8jnYHCQ=
+  app: shielded-ridge-86057
+  on:
+    repo: ellendunn/react-trello-testing
